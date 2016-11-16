@@ -5,11 +5,16 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/detail.css"/>
 		<link rel="stylesheet" href="css/skin/skin_0.css" id="cssfile" />
+		<link rel="stylesheet" type="text/css" href="css/thickbox.css"/>
 		<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
 		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript" src="js/index.js"></script>
-		<title>模仿购物网站</title>
+		<script type="text/javascript" src="js/detail.js"></script>
+		<script type="text/javascript" src="js/jquery.jqzoom.js"></script>
+		<script type="text/javascript" src="js/jquery.thickbox.js"></script>
+		<title>模仿购物网站详情页</title>
 	</head>
 	<body>
 		<div id="container">
@@ -159,12 +164,12 @@
 						<li class="li_head">推荐品牌</li><hr>
 						<div class="shopping_name">
 							<li><a href="#">耐克</a></li>
-							<li><a href="#" style="color: red;">阿迪达斯<img src="img/hot.gif"></a></li>
+							<li><a href="#">阿迪达斯<img src="img/hot.gif"></a></li>
 							<li><a href="#">达芙妮</a></li>
 							<li><a href="#">李宁</a></li>
 							<li><a href="#">安踏</a></li>
 							<li><a href="#">奥康</a></li>
-							<li><a href="#" style="color: red;">骆驼<img src="img/hot.gif"></a></li>
+							<li><a href="#">骆驼<img src="img/hot.gif"></a></li>
 							<li><a href="#">特步</a></li>	
 						</div>
 					</ul>
@@ -208,122 +213,103 @@
 						</div>
 					</ul>
 				</div>
-				<div id="pic">
-					<div class="big_pic">
-						<ul>
-							<li class=""><a href="#"><img src="img/ads/1.jpg"></a></li>
-							<li class="hide"><a href="#"><img src="img/ads/2.jpg"></a></li>
-							<li class="big hide"><a href="#"><img src="img/ads/3.jpg"></a></li>
-							<li class="hide"><a href="#"><img src="img/ads/4.jpg"></a></li>
-							<li class="hide"><a href="#"><img src="img/ads/5.jpg"></a></li>
+				<div id="detail_content">
+					<div class="intro_pic_list">
+						<a class="jqzoom" rel="gal1" title="免烫高支棉条纹衬衣">
+							<img class="big_pic_blue" src="img/pro_img/blue_one_small.jpg" title="免烫高支棉条纹衬衣"  alt="免烫高支棉条纹衬衣" id="bigImg"/>
+						</a>
+					</div>
+					<a id="thickImg" class="thickImg" href="img/pro_img/blue_one_big.jpg" title="介绍文字">
+						<img src="img/look.gif" alt="点击看大图"/>
+					</a>
+					<ul class="intro_small_pic">
+						<li class="small_pic_blue"><a href='javascript: void(0);' rel="{gallery: 'gal1', smallimage: 'img/pro_img/blue_one_small.jpg', largeimage: 'img/pro_img/blue_one_big.jpg'}"><img src="img/pro_img/blue_one.jpg" alt=""/></a></li>
+						<li class="small_pic_blue"><a href='javascript: void(0);' rel="{gallery: 'gal1', smallimage: 'img/pro_img/blue_two_small.jpg', largeimage: 'img/pro_img/blue_two_big.jpg'}"><img src="img/pro_img/blue_two.jpg" alt=""/></a></li>
+						<li class="small_pic_blue"><a href='javascript: void(0);' rel="{gallery: 'gal1', smallimage: 'img/pro_img/blue_three_small.jpg', largeimage: 'img/pro_img/blue_three_big.jpg'}"><img src="img/pro_img/blue_three.jpg" alt=""/></a></li>
+						
+						<li class="small_pic_yellow hide"><a href='javascript: void(0);' rel="{gallery: 'gal1', smallimage: 'img/pro_img/yellow_one_small.jpg', largeimage: 'img/pro_img/yellow_one_big.jpg'}"><img src="img/pro_img/yellow_one.jpg"/></a></li>
+						<li class="small_pic_yellow hide"><a href='javascript: void(0);' rel="{gallery: 'gal1', smallimage: 'img/pro_img/yellow_two_small.jpg', largeimage: 'img/pro_img/yellow_two_big.jpg'}"><img src="img/pro_img/yellow_two.jpg"/></a></li>
+						<li class="small_pic_yellow hide"><a href='javascript: void(0);' rel="{gallery: 'gal1', smallimage: 'img/pro_img/yellow_three_small.jpg', largeimage: 'img/pro_img/yellow_three_big.jpg'}"><img src="img/pro_img/yellow_three.jpg"/></a></li>
+				
+						<li class="small_pic_green hide"><a href="javascript: void(0);" rel="{gallery: 'gal1', smallimage: 'img/pro_img/green_one_small.jpg', largeimage: 'img/pro_img/green_one_big.jpg'}"><img src="img/pro_img/green_one.jpg"/></a></li>
+						<li class="small_pic_green hide"><a href="javascript: void(0);" rel="{gallery: 'gal1', smallimage: 'img/pro_img/green_two_small.jpg', largeimage: 'img/pro_img/green_two_big.jpg'}"><img src="img/pro_img/green_two.jpg"/></a></li>
+					</ul>
+					<div class="intro_card">
+						<ul class="intro_card_title">
+							<li class="selected">产品属性</li>
+							<li class="">产品尺码表</li>
+							<li class="">产品介绍</li>
 						</ul>
-					</div>
-					<div class="small_pic">
-						<a href="#" class="small_pic_info chos"><span>相约情人节</span><span>全场119元起</span></a>
-						<a href="#" class="small_pic_info"><span>新款上线</span><span>全场357元起</span></a>
-						<a href="#" class="small_pic_info"><span>愤怒小鸟特卖</span><span>全场89元起</span></a>
-						<a href="#" class="small_pic_info"><span>男鞋促销第一</span><span>全场3.1折起</span></a>
-						<a href="#" class="small_pic_info"><span>春季新品发布</span><span>全场4.1折起</span></a>
-					</div>
-				</div>
-				<div id="notice">
-					<div id="notice_pic">
-						<img class="shoes" src="img/upload/20120216.jpg"/>
-					</div>
-					<div id="latest">
-						<div class="latest_content">
-							<div class="title">最新动态</div>
+						<div class="intro_card_content">
 							<ul>
-								<li class="tooltip" title="[活动]伊伴春鞋迎春大促"><a href="#">[活动]伊伴春鞋迎春大促</a></li>
-								<li class="tooltip" title="[活动]千百度冬靴新品火热让利"><a href="#">[活动]千百度冬靴新品火热让利</a></li>
-								<li class="tooltip" title="[活动]COEY秋冬新品全场2.3折起"><a href="#">[活动]COEY秋冬新品全场2.3折起</a></li>
-								<li class="tooltip" title="[活动]伊伴春鞋迎春大促"><a href="#">[活动]伊伴春鞋迎春大促</a></li>
-								<li class="tooltip" title="[活动]千百度冬靴新品火热让利"><a href="#">[活动]千百度冬靴新品火热让利</a></li>
+								<li class="">沿用风靡百年的经典全棉牛津纺面料，通过领先的液氨整理技术，使面料的抗皱性能更上一层。延续简约、舒适、健康设计理念，特推出免烫、易打理的精细免烫牛津纺长袖衬衫系列。</li>
+								<li class="hide">来自新疆无污染的生态棉花，采用紧密纺精梳棉纱，单经双纬的织造组织，造就了颗粒饱满、朴实无华、温润细腻的经典牛津纺，易洗快干、手感丰软、吸湿性好。设计师遵循布料完美肌理，立体剪裁，曲摆的现代人性化裁减，相得益彰，浑然天成。</li>
+								<li class="hide">世界权威德国科德宝的衬和英国高士缝纫线使成衣领型自然舒展、永不变形，缝线部位平服工整、牢固耐磨；人性化的4片式后背打褶结构设计提供更舒适的活动空间；领尖扣的领型设计戴或不戴领带风格炯同、瞬间呈现；醇正天然设计，只为彰显自然荣耀。</li>
 							</ul>
 						</div>
 					</div>
 				</div>
-				<div id="shoes_classify">
-					<span class="title">品牌活动</span><hr>
-					<div id="classify">
-						<div id="anchor">
-							<div class="chos" id="sport"><a href="#" >运动</a></div>
-							<div class="" id="female_shoes"><a href="#">女鞋</a></div>
-							<div class="" id="male_shoes"><a href="#">男鞋</a></div>
-							<div class="" id="kids_shoes"><a href="#">童鞋</a></div>
-						</div>
-						<div>
-							<ul id="big_shoes">
-								<li>
-									<img src="img/upload/20120217.jpg"/>
-									<a href="#">耐克</a>
-								</li>
-								<li>
-									<img src="img/upload/20120218.jpg"/>
-									<a href="#">阿迪达斯</a>
-								</li>
-								<li>
-									<img src="img/upload/20120219.png"/>
-									<a href="#">李宁</a>
-								</li>
-								<li>
-									<img src="img/upload/20120220.png"/>
-									<a href="#">安踏</a>
-								</li>
-								<li>
-									<img src="img/upload/20120217.jpg"/>
-									<a href="#">耐克</a>
-								</li>
-								<li>
-									<img src="img/upload/20120218.jpg"/>
-									<a href="#">阿迪达斯</a>
-								</li>
-								<li>
-									<img src="img/upload/20120219.png"/>
-									<a href="#">李宁</a>
-								</li>
-								<li>
-									<img src="img/upload/20120220.png"/>
-									<a href="#">安踏</a>
-								</li>
-								<li>
-									<img src="img/upload/20120217.jpg"/>
-									<a href="#">耐克</a>
-								</li>
-								<li>
-									<img src="img/upload/20120218.jpg"/>
-									<a href="#">阿迪达斯</a>
-								</li>
-								<li>
-									<img src="img/upload/20120219.png"/>
-									<a href="#">李宁</a>
-								</li>
-								<li>
-									<img src="img/upload/20120220.png"/>
-									<a href="#">安踏</a>
-								</li>
-								<li>
-									<img src="img/upload/20120217.jpg"/>
-									<a href="#">耐克</a>
-								</li>
-								<li>
-									<img src="img/upload/20120218.jpg"/>
-									<a href="#">阿迪达斯</a>
-								</li>
-								<li>
-									<img src="img/upload/20120219.png"/>
-									<a href="#">李宁</a>
-								</li>
-								<li>
-									<img src="img/upload/20120220.png"/>
-									<a href="#">安踏</a>
-								</li>
-							</ul>
-						</div>	
-					</div>
+				<div id="detail_intro">
+					<h5>免烫高支棉条纹衬衣</h5>
+					<ul>
+						<li>全新精品高支棉衬衫再次提升品质，精选100%新疆长绒棉织造而成，平整度好，短绒少； 80-100高支双股经纬交织，带来无与伦比的舒适享受；而且面料反光效果好，具有漂亮的光泽，质感上佳，有利于免烫效果的维持！</li>
+						<li class="intro_detail">价&nbsp;&nbsp;格：<span style="text-decoration: line-through;">379.00元</span></li>
+						<li class="intro_detail">促&nbsp;&nbsp;销：<span style="color: orangered; font-family: arial; font-size: 1.9em; margin-left: .1em;">200.00</span>元</li>
+						<li class="intro_detail_color">颜&nbsp;&nbsp;色：
+							<span class="color_word">蓝白</span>
+							<div class="choose_color">
+								<ul>
+									<li>
+										<img class="" alt="蓝白" src="img/pro_img/blue.jpg"/>
+									</li>
+									<li>
+										<img class="" alt="黄白" src="img/pro_img/yellow.jpg"/>
+									</li>
+									<li>
+										<img class="" alt="粉绿" src="img/pro_img/green.jpg"/>
+									</li>
+								</ul>	
+							</div>
+						</li>
+						<li class="intro_detail_size">尺&nbsp;&nbsp;寸：
+							<span class="" style="font-family: '微软雅黑';">未选择</span>
+							<div class="choose_size">
+								<div class="">S</div>
+								<div class="">L</div>
+								<div class="">SL</div>
+								<div class="">LL</div>
+							</div>
+						</li>
+						<li class="intro_detail_number">数&nbsp;&nbsp;量：
+							<select id="choose_number">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</li>
+						<li class="intro_detail_price">总&nbsp;&nbsp;计：&nbsp;<span class="price">200</span>元</li>
+						<li class="choose_score">给商品评分：
+							<div>
+								<ul class="score nostar">
+									<li class="one"><a href="#" title="1分">1</a></li>
+									<li class="two"><a href="#" title="2分">2</a></li>
+									<li class="three"><a href="#" title="3分">3</a></li>
+									<li class="four"><a href="#" title="4分">4</a></li>
+									<li class="five"><a href="#" title="5分">5</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<img class="cart" src="img/btn_cart.png" />
+						</li>
+					</ul>
 				</div>
 			</div>
-			<div id="footer">Copyright © 2009-2012 JaneShop Inc.</div>
+			<div id="footer">
+				<span>Copyright © 2009-2012 JaneShop Inc.</span>
+			</div>
 		</div>
 	</body>
 </html>

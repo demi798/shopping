@@ -1,0 +1,171 @@
+/*详情页样式表*/
+
+/*中间图片样式*/
+#detail_content {
+	position: relative;
+	float: left;
+	width: 310px;
+	height: 564px;
+	margin-left: 10px;
+	font-size: 13px;
+}
+#detail_intro {
+	position: relative;
+	float: left;
+	width: 450px;
+	margin-left: 10px;
+	font-size: 13px;
+	line-height: 1.9em;
+}
+.intro_pic_list img {
+	border: 1px solid #CCCCCC;
+	cursor: crosshair;
+}
+#thickImg img {
+	display: block;
+	margin: .7em auto;
+	cursor: pointer;
+}
+.intro_small_pic {
+	float: left;
+	cursor: pointer;
+}
+.intro_small_pic li {
+	float: left;
+}
+.intro_small_pic li img {
+	width: 78%;
+	margin-left: .2em;
+	margin-bottom: .7em;
+	border: 1px solid #f1f1f1;
+}
+.intro_small_pic img:hover {
+	border: 1px solid darkgray;
+}
+.intro_card_title { 
+	float: left;
+}
+.intro_card_title li {
+	float: left;
+	background: #f1f1f1;
+	margin-left: .3em;
+	line-height: 1.7em;
+	border: 1px solid #808080;
+	border-bottom: none;
+	padding: .1em .4em;
+	cursor: pointer;
+}
+.intro_card_title .selected {
+	color: #fff;;
+	background: #6D84B4;
+}
+.intro_card_content {
+	border: 1px solid #808080;
+	float: left;
+	margin-left: .3em;
+}
+.intro_card_content li {
+	line-height: 1.7em;
+	font-size: .9em;
+}
+
+/*右侧文字及价格类介绍样式*/
+#detail_intro h5 {
+	margin: .1em 0;
+}
+.intro_detail {
+	display: block;
+}
+.choose_color {
+	width: 300px;
+	height: 40px;
+	padding: 5px 0;
+}
+.choose_color ul {
+	float: left;
+}
+.choose_color ul li {
+	float: left;
+	margin-right: 1.5em;
+}
+.choose_color img {
+	width: 118%;
+	border: 1px solid #d1d1d1;
+	cursor: pointer;
+}
+.choose_color img:hover,.choose_color img.hover {
+	border: 1px solid red;
+	background: #999;
+}
+.choose_size {
+	width: 300px;
+	height: 45px;
+}
+.choose_size div {
+	width: 32px;
+	height: 32px;
+	text-align: center;
+	line-height: 32px;
+	margin: 2px 5px;
+	font-family: "微软雅黑";
+	border: 1px solid darkgray;
+	float: left;
+	cursor: pointer;
+}
+.choose_size .cur {
+	border: 1px solid #aaa;
+	background: #f60;
+}
+#choose_number {
+	display: block;
+}
+.cart { 
+	cursor: pointer;
+}
+/*右下侧评分栏样式*/
+.score { 
+	overflow: hidden;
+	position: relative;
+	width: 80px;
+	height: 16px;
+	margin-bottom: 20px;
+	clear: both;
+	background: url(../img/star-matrix.gif) no-repeat 0 0;
+}
+.nostar {background-position:0 0}
+.onestar {background-position:0 -16px}
+.twostar {background-position:0 -32px}
+.threestar {background-position:0 -48px}
+.fourstar {background-position:0 -64px}
+.fivestar {background-position:0 -80px}
+ul.score li {
+	float:left;
+	text-indent:-999em;
+}
+ul.score li a {
+	position:absolute;
+	left:0;
+	top:0;
+	width:16px;
+	height:16px;
+	text-decoration:none;
+	z-index: 200;
+}
+ul.score li.one a {left:0;}
+ul.score li.two a {left:16px;}
+ul.score li.three a {left:32px;}
+ul.score li.four a {left:48px;}
+ul.score li.five a {left:64px;}
+ul.score li a:hover {
+	z-index:2;
+	width:80px;
+	height:16px;
+	overflow:hidden;
+	left:0;	
+	background: url(../img/star-matrix.gif) no-repeat 0 0;
+}
+ul.score li.one a:hover {background-position:0 -96px;}
+ul.score li.two a:hover {background-position:0 -112px;}
+ul.score li.three a:hover {background-position:0 -128px;}
+ul.score li.four a:hover {background-position:0 -144px;}
+ul.score li.five a:hover {background-position:0 -160px;}
